@@ -134,7 +134,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider, SauceOnD
      * @throws Exception if an error occurs during the running of the test
      */
     @Test(dataProvider = "hardCodedBrowsers")
-    public void pandoraTitleTest(String browser, String version, String os, Method method) throws Exception {
+    public void guineaPigPageTitleTest(String browser, String version, String os, Method method) throws Exception {
         WebDriver driver = createDriver(browser, version, os, method.getName());
         driver.get("https://saucelabs.com/test/guinea-pig");
 
