@@ -104,6 +104,8 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider, SauceOnD
             capabilities.setCapability(CapabilityType.VERSION, version);
         }
         capabilities.setCapability(CapabilityType.PLATFORM, os);
+        String extendedDebugging = "extendedDebugging";
+        capabilities.setCapability(extendedDebugging, true);
 
         String jobName = methodName + '_' + os + '_' + browser + '_' + version;
         capabilities.setCapability("name", jobName);
